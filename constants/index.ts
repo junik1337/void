@@ -205,3 +205,30 @@ export const CardData4 = [
     button: "Lire le communiqué",
   },
 ];
+
+export const CardData5 = [
+  {
+    id: 1,
+    title: "Rapport diversité, équité et inclusion",
+    description:
+      "Au cours de la première année complète de notre nouvelle stratégie People & Culture, les enjeux de Diversité, Équité et Inclusion (DE&I) ont occupé le devant de la scène. Ce rapport célèbre les progrès concrets que nous avons réalisés pour refléter la diversité dans nos équipes dirigeantes, libérer tout le potentiel de nos collaborateurs et collaboratrices et avoir un impact sur l’environnement de travail mais aussi au-delà.",
+    picture: "/rapport1.png",
+    button: "Lisez le document",
+  },
+  {
+    id: 2,
+    title: "Notre héritage",
+    description:
+      "Notre societé d’aujourd’hui s’appuie sur un héritage qui consiste à transformer l’impossible en possible.",
+    picture: "/rapport2.png",
+    button: "En savoir plus sur notre histoire",
+  },
+  {
+    id: 3,
+    title: "Notre rapport intégré 2022",
+    description:
+      "Découvrez comment nous rendons possible l'impossible pour améliorer la vie des gens dans le monde.",
+    picture: "/rapport3.png",
+    button: "Lire le rapport",
+  },
+];

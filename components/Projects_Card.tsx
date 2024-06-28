@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { FaArrowRight, FaExternalLinkAlt, FaPlay } from 'react-icons/fa';
 
 interface Props {
 	title: string;
@@ -9,7 +10,7 @@ interface Props {
 	id?: number;
 }
 
-const Card = ({ title, description, picture, PhotoPosition, id }: Props) => {
+const Projects_Card = ({ title, description, picture, PhotoPosition, id }: Props) => {
 	return (
 		<div className="card lg:card-side bg-base-100 shadow-xl w-[98%] flex flex-col-reverse lg:flex-row">
 			{PhotoPosition === 'left' &&
@@ -24,7 +25,7 @@ const Card = ({ title, description, picture, PhotoPosition, id }: Props) => {
 					/>
 					{id !== 1 &&
 						<button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#EFEFEF] w-14 h-14 rounded-full flex items-center justify-center z-10">
-							<Image src="/play.svg" alt="play" width={20} height={20} className='w-auto h-auto' />
+							<FaPlay className="text-mypurple w-[18px] h-[18px]" />
 						</button>
 					}
 				</div>
@@ -40,9 +41,9 @@ const Card = ({ title, description, picture, PhotoPosition, id }: Props) => {
 						<p>En savoir plus</p>
 						{id === 1
 							?
-							<Image src="/redirect.svg" alt="arrow" width={20} height={20} className='w-auto h-auto' />
+							<FaExternalLinkAlt className="text-mypurple w-[18px] h-[18px]" />
 							:
-							<Image src="/right.svg" alt="arrow" width={20} height={20} className='w-auto h-auto' />
+							<FaArrowRight className="text-mypurple w-[18px] h-[18px]" />
 						}
 					</button>
 				</div>
@@ -60,7 +61,7 @@ const Card = ({ title, description, picture, PhotoPosition, id }: Props) => {
 					/>
 					{id !== 1 &&
 						<button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#EFEFEF] w-14 h-14 rounded-full flex items-center justify-center z-10">
-							<Image src="/play.svg" alt="play" width={20} height={20} className='w-auto h-auto' />
+							<FaPlay className="text-mypurple w-[18px] h-[18px]" />
 						</button>
 					}
 				</div>
@@ -69,4 +70,4 @@ const Card = ({ title, description, picture, PhotoPosition, id }: Props) => {
 	);
 };
 
-export default Card;
+export default Projects_Card;
