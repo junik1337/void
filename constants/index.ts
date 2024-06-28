@@ -174,3 +174,34 @@ export const CardData3 = [
     button: "Lire l'article",
   },
 ];
+
+export const CardData4 = [
+  {
+    id: 1,
+    date: "24 février 2024",
+    title:
+      "Communiqué : Résultats de phase II montrent que le rilzabrutinib permet de réduire rapidement la sévérité des démangeaisons causées par l’urticaire chronique spontanée et d’améliorer significativement l’activité de la maladie chez l’adulte",
+    button: "Lire le communiqué",
+  },
+  {
+    id: 2,
+    date: "24 février 2024",
+    title:
+      "Media Update: Dupixent® continues scientific leadership with late-breaking results showing reduced airway inflammation and mucus plugging in adults with uncontrolled moderate-to-severe asthma",
+    button: "Lire le communiqué",
+  },
+  {
+    id: 3,
+    date: "23 février 2024",
+    title:
+      "Communiqué de presse : Dépôt du Document d’Enregistrement Universel 2023, contenant le Rapport Financier Annuel, et du « Form 20-F » américain",
+    button: "Lire le communiqué",
+  },
+  {
+    id: 4,
+    date: "23 février 2024",
+    title:
+      "Communiqué de presse : La FDA accorde un examen prioritaire à la demande de licence de produits biologique relative à Dupixent® pour le traitement de la BPCO avec inflammation de type 2",
+    button: "Lire le communiqué",
+  },
+];

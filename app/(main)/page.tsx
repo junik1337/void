@@ -1,5 +1,6 @@
 import Articles from "@/components/Articles";
 import Hero from "@/components/Hero";
+import Infromation from "@/components/Information";
 import Projects from "@/components/Projects";
 import Subjects from "@/components/Subjects";
 import Image from "next/image";
@@ -11,6 +12,7 @@ export default function Home() {
       <Projects />
       <Subjects />
       <Articles />
+      <Infromation />
     </div>
   );
 }
