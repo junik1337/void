@@ -35,7 +35,7 @@
 
 @layer utilities {
   .wrapper {
-    @apply max-w-[94%] lg:mx-auto p-5 md:px-10 xl:px-0 w-full;
+    @apply lg:max-w-[96%] lg:mx-auto p-5 md:px-10 xl:px-0 w-full;
   }
 
   .flex-center {

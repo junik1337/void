@@ -7,12 +7,10 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className="flex h-screen bg-white flex-col">
-				<Header />
-				{children}
-				<Footer />
-			</body>
-		</html>
+		<div className="flex h-screen flex-col">
+			<Header />
+			<main className="flex-1">{children}</main>
+			<Footer />
+		</div>
 	);
 }
