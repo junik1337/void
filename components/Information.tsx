@@ -40,6 +40,11 @@ const Infromation = () => {
 					</div>
 				))}
 			</div>
+
+			<button className='flex flex-row h-fit gap-2 items-center justify-end'>
+				<p className='p-bold-20 md:h5-bold  text-center'>Voir tous les communiqués de presse</p>
+				<Image src="/right.svg" alt="articles" width={24} height={24} />
+			</button>
 		</section>
 	);
 };
