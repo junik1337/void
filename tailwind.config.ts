@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      colors: {
+        mypurple: "#7A00E6",
+      },
       screens: {
         myscreen: "1360px",
       },
