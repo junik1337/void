@@ -11,7 +11,7 @@ const Header = () => {
 	return (
 		<header id='header' className='wrapper h-full self-center'>
 			<div className="flex h-full w-full items-center justify-between">
-				<div className='flex-center gap-5'>
+				<div className='flex-between gap-5 w-full md:w-auto'>
 					<MobileNav />
 					<Link href="/">
 						<p className='min-w-[88px] min-h-[34px] font-bold text-4xl'>

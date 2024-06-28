@@ -8,10 +8,11 @@ interface Props {
 	date: string;
 	picture: string;
 	id?: number;
+	company: string;
 	button: string;
 }
 
-const CardArt = ({ title, date, picture, id, button }: Props) => {
+const CardArt = ({ title, date, picture, id, company, button }: Props) => {
 	return (
 		<div className="card bg-base-100 w-[98%] md:w-96 min-h-[500px] shadow-xl ">
 			<figure className='min-h-[220px]'>
@@ -25,6 +26,9 @@ const CardArt = ({ title, date, picture, id, button }: Props) => {
 			</figure>
 			<div className="card-body gap-2 justify-between">
 				<div className='flex flex-col'>
+					<p className='text-sm w-20'>
+						{company}
+					</p>
 					<p className='text-sm w-20'>
 						{date}
 					</p>

@@ -23,6 +23,7 @@ const Articles = () => {
 					<CardArt
 						key={index}
 						id={card.id}
+						company={card.company}
 						title={card.title}
 						picture={card.picture}
 						date={card.date}

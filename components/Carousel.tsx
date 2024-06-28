@@ -29,6 +29,7 @@ const Carousel = () => {
 					{CardData3.map((card, index) => (
 						<div className="min-w-full" key={index}>
 							<CardArt
+								company={card.company}
 								key={index}
 								id={card.id}
 								title={card.title}

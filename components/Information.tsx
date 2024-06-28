@@ -17,15 +17,20 @@ const Infromation = () => {
 					<div key={index} className='px-6 py-8 flex flex-col w-full border-2 gap-4'>
 						<div className='w-full flex justify-between items-center'>
 							<p className='text-sm w-fit'>{card.date}</p>
-							<button className='w-[44px] h-[44px] p-1 flex rounded-full border border-mypurple items-center justify-center'>
+							<button className='w-[44px] md:flex hidden h-[44px] p-1 rounded-full border border-mypurple items-center justify-center'>
 								<FaDownload className='text-mypurple w-[14px] h-[14px]' />
 							</button>
 						</div>
 						<p className='p-bold-24 w-full md:w-[70%]'>{card.title}</p>
-						<Button className="font-bold flex bg-transparent w-fit text-black hover:bg-transparent hover:border-2 hover:border-mypurple flex-row items-center gap-4">
-							<p>{card.button}</p>
-							<FaArrowRight className="text-mypurple w-[18px] h-[18px]" />
-						</Button>
+						<div className='flex-between w-full'>
+							<Button className="font-bold flex bg-transparent w-fit text-black hover:bg-transparent hover:border-2 hover:border-mypurple flex-row items-center gap-4">
+								<p>{card.button}</p>
+								<FaArrowRight className="text-mypurple w-[18px] h-[18px]" />
+							</Button>
+							<button className='w-[44px] flex md:hidden h-[44px] p-1 rounded-full border border-mypurple items-center justify-center'>
+								<FaDownload className='text-mypurple w-[14px] h-[14px]' />
+							</button>
+						</div>
 					</div>
 				))}
 			</div>
