@@ -13,12 +13,12 @@ interface Props {
 
 const RapportCard = ({ title, description, picture, id, button }: Props) => {
 	return (
-		<div className="card bg-base-100 w-[96%] md:w-96 md:min-h-[720px] shadow-xl ">
-			<figure className='h-[240px]'>
+		<div className="card bg-base-100 w-[98%] md:w-96 md:min-h-[720px] shadow-xl ">
+			<figure className='h-[220px]'>
 				<Image
 					src={picture}
-					width={600}
-					height={300}
+					width={700}
+					height={400}
 					className='w-auto h-auto'
 					alt="Shoes" />
 			</figure>
