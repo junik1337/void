@@ -9,6 +9,7 @@ import {
 import { L_headerLinks, R_headerLinks } from '@/constants';
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
+import { Button } from './ui/button';
 
 
 const MobileNav = () => {
@@ -25,21 +26,21 @@ const MobileNav = () => {
 				<div className='flex h-2/3 p-bold-16 flex-col justify-around gap-4 flex-center'>
 					<div className='flex flex-col w-full h-full items-start justify-evenly'>
 						{L_headerLinks.map((link, index) => (
-							<button key={index} className='border-outline border-2 rounded-md'>
+							<Button key={index} className='border-mypurple bg-transparent text-black font-bold w-full border-2 rounded-md'>
 								<Link key={link.label} href={link.route} className="m-2" >
 									{link.label}
 								</Link>
-							</button>
+							</Button>
 						))}
 					</div>
 
 					<div className='flex flex-col w-full h-full items-start justify-evenly'>
 						{R_headerLinks.map((link, index) => (
-							<button key={index} className='border-outline border-2 rounded-md'>
+							<Button key={index} className='border-mypurple bg-transparent text-black font-bold w-full border-2 rounded-md'>
 								<Link key={link.label} href={link.route} className="m-2" >
 									{link.label}
 								</Link>
-							</button>
+							</Button>
 						))}
 					</div>
 				</div>

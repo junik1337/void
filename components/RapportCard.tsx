@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { FaArrowRight, FaExternalLinkAlt } from 'react-icons/fa';
+import { Button } from './ui/button';
 
 interface Props {
 	title: string;
@@ -29,7 +30,7 @@ const RapportCard = ({ title, description, picture, id, button }: Props) => {
 					{description}
 				</p>
 				<div className="card-actions justify-start">
-					<button className="font-bold flex flex-row items-center gap-4">
+					<Button className="font-bold flex bg-transparent text-black hover:bg-transparent hover:border-2 hover:border-mypurple flex-row items-center gap-4">
 						<p>{button}</p>
 						{id === 2
 							?
@@ -37,7 +38,7 @@ const RapportCard = ({ title, description, picture, id, button }: Props) => {
 							:
 							<FaExternalLinkAlt className="text-mypurple w-[18px] h-[18px]" />
 						}
-					</button>
+					</Button>
 				</div>
 			</div>
 		</div>

@@ -4,6 +4,7 @@ import { links } from '@/constants';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
+import { Button } from './ui/button';
 
 interface props {
 	links: links[];
@@ -20,8 +21,7 @@ const NavItems = ({ links }: props) => {
 				return (
 					<button
 						key={link.route}
-						className={`${isActive && 'text-primary'}
-							} flex-center p-semibold-14 xl:p-bold-16 whitespace-nowrap border-outline`}
+						className={`${isActive && 'text-primary'} flex-center p-semibold-12 xl:p-bold-16 whitespace-nowrap bg-transparent text-black border-mypurple hover:text-mypurple`}
 					>
 						<Link href={link.route}>{link.label}</Link>
 					</button>

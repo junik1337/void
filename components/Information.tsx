@@ -2,6 +2,7 @@ import { CardData4 } from '@/constants';
 import Image from 'next/image';
 import React from 'react';
 import { FaArrowRight, FaDownload } from 'react-icons/fa';
+import { Button } from './ui/button';
 const Infromation = () => {
 	return (
 		<section
@@ -22,10 +23,10 @@ const Infromation = () => {
 							</button>
 						</div>
 						<p className='p-bold-24 w-full md:w-[70%]'>{card.title}</p>
-						<button className="font-bold flex flex-row items-center gap-4">
+						<Button className="font-bold flex bg-transparent w-fit text-black hover:bg-transparent hover:border-2 hover:border-mypurple flex-row items-center gap-4">
 							<p>{card.button}</p>
 							<FaArrowRight className="text-mypurple w-[18px] h-[18px]" />
-						</button>
+						</Button>
 					</div>
 				))}
 			</div>

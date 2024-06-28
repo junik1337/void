@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { FaArrowRight, FaExternalLinkAlt, FaPlay } from 'react-icons/fa';
+import { Button } from './ui/button';
 
 interface Props {
 	title: string;
@@ -12,9 +13,9 @@ interface Props {
 
 const Projects_Card = ({ title, description, picture, PhotoPosition, id }: Props) => {
 	return (
-		<div className="card lg:card-side bg-base-100 shadow-xl w-[98%] flex flex-col-reverse lg:flex-row">
+		<div className="card lg:card-side bg-base-100 shadow-xl justify-between w-[98%] flex flex-col-reverse lg:flex-row">
 			{PhotoPosition === 'left' &&
-				<div className="relative w-full lg:w-1/2">
+				<div className="relative w-full ">
 					<Image
 						src={picture}
 						width={700}
@@ -37,7 +38,7 @@ const Projects_Card = ({ title, description, picture, PhotoPosition, id }: Props
 				</h2>
 				<p>{description}</p>
 				<div className="card-actions justify-start">
-					<button className="font-bold flex flex-row items-center gap-4">
+					<Button className="font-bold flex bg-transparent text-black hover:bg-transparent hover:border-2 hover:border-mypurple flex-row items-center gap-4">
 						<p>En savoir plus</p>
 						{id === 1
 							?
@@ -45,7 +46,7 @@ const Projects_Card = ({ title, description, picture, PhotoPosition, id }: Props
 							:
 							<FaArrowRight className="text-mypurple w-[18px] h-[18px]" />
 						}
-					</button>
+					</Button>
 				</div>
 			</div>
 
