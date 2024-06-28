@@ -147,3 +147,30 @@ export const CardData2 = [
     button: "En savoir plus",
   },
 ];
+
+export const CardData3 = [
+  {
+    id: 1,
+    company: "Your Health",
+    date: "27 février 2024",
+    title: "Journée des maladies rares 2024 : L'équité en action",
+    picture: "/background.jpeg",
+    button: "Lire l'article",
+  },
+  {
+    id: 2,
+    company: "Your Health",
+    date: "7 février 2024",
+    title: "#NoJargon: Plongez dans le monde de la science",
+    picture: "/article2.png",
+    button: "Lire l'article",
+  },
+  {
+    id: 3,
+    company: "Your Health",
+    date: "5 février 2024",
+    title: "Cancer et travail : Agir ensemble",
+    picture: "/article3.png",
+    button: "Lire l'article",
+  },
+];

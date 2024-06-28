@@ -1,3 +1,4 @@
+import Articles from "@/components/Articles";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Subjects from "@/components/Subjects";
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <Subjects />
+      <Articles />
     </div>
   );
 }
