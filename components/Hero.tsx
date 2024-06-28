@@ -34,7 +34,7 @@ const Hero = () => {
 				priority
 				width={1920}
 				height={1080}
-				className="object-center -translate-y-5 w-full h-[40%] sm:h-auto "
+				className="object-center -translate-y-5 w-full h-[48%] sm:h-auto "
 			/>
 		</section>
 	);
