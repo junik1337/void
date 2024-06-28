@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import CardArt from './CardArt';
 import Carousel from './Carousel';
+import { FaArrowRight } from 'react-icons/fa';
 
 const Articles = () => {
 	return (
@@ -12,9 +13,9 @@ const Articles = () => {
 		>
 			<div className='flex flex-col md:flex-row justify-between w-full gap-5'>
 				<h1 className='h2-bold max-w-56 self-start '>Entreprise Today</h1>
-				<button className='flex flex-row h-fit gap-2'>
+				<button className='flex flex-row h-fit gap-4 items-center justify-center'>
 					<p className='p-bold-20 md:h5-bold'>Lisez nos derniers articles</p>
-					<Image src="/right.svg" alt="articles" width={24} height={24} />
+					<FaArrowRight className="text-mypurple w-[18px] h-[18px]" />
 				</button>
 			</div>
 

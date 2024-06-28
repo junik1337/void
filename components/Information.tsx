@@ -1,6 +1,7 @@
 import { CardData4 } from '@/constants';
 import Image from 'next/image';
 import React from 'react';
+import { FaArrowRight, FaDownload } from 'react-icons/fa';
 const Infromation = () => {
 	return (
 		<section
@@ -16,26 +17,14 @@ const Infromation = () => {
 					<div key={index} className='px-6 py-8 flex flex-col w-full border-2 gap-4'>
 						<div className='w-full flex justify-between items-center'>
 							<p className='text-sm w-fit'>{card.date}</p>
-							<button>
-								<Image
-									src='/download.svg'
-									alt="articles"
-									width={30}
-									height={30}
-									className='rounded-full border p-2 w-9 h-9 border-mypurple'
-								/>
+							<button className='w-[44px] h-[44px] p-1 flex rounded-full border border-mypurple items-center justify-center'>
+								<FaDownload className='text-mypurple w-[14px] h-[14px]' />
 							</button>
 						</div>
 						<p className='p-bold-24 w-full md:w-[70%]'>{card.title}</p>
 						<button className="font-bold flex flex-row items-center gap-4">
 							<p>{card.button}</p>
-							<Image
-								src="/right.svg"
-								alt="arrow"
-								width={20}
-								height={20}
-								className='w-auto h-auto'
-							/>
+							<FaArrowRight className="text-mypurple w-[18px] h-[18px]" />
 						</button>
 					</div>
 				))}
@@ -43,7 +32,7 @@ const Infromation = () => {
 
 			<button className='flex flex-row h-fit gap-2 items-center justify-end'>
 				<p className='p-bold-20 md:h5-bold  text-center'>Voir tous les communiqués de presse</p>
-				<Image src="/right.svg" alt="articles" width={24} height={24} />
+				<FaArrowRight className="text-mypurple w-[18px] h-[18px]" />
 			</button>
 		</section>
 	);

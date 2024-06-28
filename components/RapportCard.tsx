@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { FaArrowRight, FaExternalLinkAlt } from 'react-icons/fa';
 
 interface Props {
 	title: string;
@@ -32,9 +33,9 @@ const RapportCard = ({ title, description, picture, id, button }: Props) => {
 						<p>{button}</p>
 						{id === 2
 							?
-							<Image src="/right.svg" alt="arrow" width={20} height={20} className='w-auto h-auto' />
+							<FaArrowRight className="text-mypurple w-[18px] h-[18px]" />
 							:
-							<Image src="/redirect.svg" alt="arrow" width={20} height={20} className='w-auto h-auto' />
+							<FaExternalLinkAlt className="text-mypurple w-[18px] h-[18px]" />
 						}
 					</button>
 				</div>

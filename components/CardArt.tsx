@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { FaArrowRight } from 'react-icons/fa';
 
 interface Props {
 	title: string;
@@ -33,7 +34,7 @@ const CardArt = ({ title, date, picture, id, button }: Props) => {
 				<div className="card-actions justify-start">
 					<button className="font-bold flex flex-row items-center gap-4">
 						<p>{button}</p>
-						<Image src="/right.svg" alt="arrow" width={20} height={20} className='w-auto h-auto' />
+						<FaArrowRight className="text-mypurple w-[18px] h-[18px]" />
 					</button>
 				</div>
 			</div>

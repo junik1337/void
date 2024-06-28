@@ -7,7 +7,7 @@ const Rapport = () => {
 	return (
 		<section
 			id='rapport'
-			className='flex-col md:flex-row justify-center flex items-center flex-wrap gap-20 py-12'
+			className='flex-col md:flex-row justify-center w-full flex items-center flex-wrap gap-20 py-12'
 		>
 			<div className='flex flex-col md:flex-row justify-between w-full gap-5'>
 				<h1 className='h2-bold w-fit self-start '>Découvrir plus</h1>

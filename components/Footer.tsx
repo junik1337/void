@@ -1,6 +1,7 @@
 import { footerLinks, IconLists } from '@/constants';
 import Image from 'next/image';
 import React from 'react';
+import { FaArrowUp } from 'react-icons/fa';
 
 const Footer = () => {
 	return (
@@ -32,7 +33,7 @@ const Footer = () => {
 					</div>
 					<button className='flex flex-row gap-2'>
 						<p>Haut de la page</p>
-						<Image src={'/up.svg'} alt='up-arrow' width={14} height={16} className='w-[14px] h-[16px]' />
+						<FaArrowUp className="text-white w-[18px] h-[18px]" />
 					</button>
 				</div>
 			</div>
