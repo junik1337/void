@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from './ui/button';
-import Image from 'next/image';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const Contact = () => {

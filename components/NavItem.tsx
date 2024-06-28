@@ -4,7 +4,6 @@ import { links } from '@/constants';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react';
-import { Button } from './ui/button';
 
 interface props {
 	links: links[];

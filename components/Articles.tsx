@@ -1,5 +1,4 @@
 import { CardData3 } from '@/constants';
-import Image from 'next/image';
 import React from 'react';
 import CardArt from './CardArt';
 import Carousel from './Carousel';

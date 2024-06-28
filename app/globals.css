@@ -6,6 +6,11 @@
 .debug {
   @apply border-2 border-red-700;
 }
+@layer base {
+  * {
+    @apply !scroll-smooth;
+  }
+}
 
 .debug > * {
   @apply border-2 border-green-700;

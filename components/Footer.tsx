@@ -2,6 +2,8 @@ import { footerLinks, IconLists } from '@/constants';
 import Image from 'next/image';
 import React from 'react';
 import { FaArrowUp } from 'react-icons/fa';
+import { Button } from './ui/button';
+import Link from 'next/link';
 
 const Footer = () => {
 	return (
@@ -15,10 +17,9 @@ const Footer = () => {
 						</p>
 						<div className='flex w-full flex-wrap items-center justify-center gap-4'>
 							{IconLists.map((icon, index) => (
-								<div
-									role='button'
+								<button
 									key={index}
-									className='w-10  h-10 cursor-pointer flex justify-center items-center rounded-[20px] border'
+									className='hover:bg-mypurple hover:border-2 hover:border-white w-10 h-10 cursor-pointer flex justify-center items-center rounded-[20px] border'
 								>
 									<Image
 										src={icon}
@@ -27,20 +28,24 @@ const Footer = () => {
 										height={19}
 										className='w-[19px] h-[19px]'
 									/>
-								</div>
+								</button>
 							))}
 						</div>
 					</div>
-					<button className='flex flex-row gap-2'>
-						<p>Haut de la page</p>
-						<FaArrowUp className="text-white w-[18px] h-[18px]" />
-					</button>
+					<Link href='#header'>
+						<Button
+							className='flex flex-row gap-2 bg-transparent hover:bg-transparent hover:border-2 hover:border-mypurple'
+						>
+							<p>Haut de la page</p>
+							<FaArrowUp className="text-white w-[18px] h-[18px]" />
+						</Button>
+					</Link>
 				</div>
 			</div>
 
 			<div className='w-full text-black flex gap-4 h-fit flex-col md:flex-row md:flex-wrap p-4'>
 				{footerLinks.map((link, index) => (
-					<button key={index} className='w-fit p-4 text-center text-nowrap'>
+					<button key={index} className='w-fit hover:underline p-4 text-center text-nowrap'>
 						{link.label}
 					</button>
 

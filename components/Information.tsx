@@ -1,5 +1,4 @@
 import { CardData4 } from '@/constants';
-import Image from 'next/image';
 import React from 'react';
 import { FaArrowRight, FaDownload } from 'react-icons/fa';
 import { Button } from './ui/button';

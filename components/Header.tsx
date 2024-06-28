@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import NavItems from './NavItem';
@@ -10,7 +9,7 @@ import { Button } from './ui/button';
 
 const Header = () => {
 	return (
-		<header className='wrapper h-full self-center '>
+		<header id='header' className='wrapper h-full self-center'>
 			<div className="flex h-full w-full items-center justify-between">
 				<div className='flex-center gap-5'>
 					<MobileNav />
