@@ -26,7 +26,7 @@ const MobileNav = () => {
 				<div className='flex h-2/3 p-bold-16 flex-col justify-around gap-4 flex-center'>
 					<div className='flex flex-col w-full h-full items-start justify-evenly'>
 						{L_headerLinks.map((link, index) => (
-							<Button key={index} className='border-mypurple bg-transparent text-black font-bold w-full border-2 rounded-md'>
+							<Button key={index} className='border-mypurple hover:text-white bg-transparent text-black font-bold w-full border-2 rounded-md'>
 								<Link key={link.label} href={link.route} className="m-2" >
 									{link.label}
 								</Link>
@@ -36,7 +36,7 @@ const MobileNav = () => {
 
 					<div className='flex flex-col w-full h-full items-start justify-evenly'>
 						{R_headerLinks.map((link, index) => (
-							<Button key={index} className='border-mypurple bg-transparent text-black font-bold w-full border-2 rounded-md'>
+							<Button key={index} className='border-mypurple hover:text-white bg-transparent text-black font-bold w-full border-2 rounded-md'>
 								<Link key={link.label} href={link.route} className="m-2" >
 									{link.label}
 								</Link>

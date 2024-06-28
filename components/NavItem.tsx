@@ -13,16 +13,16 @@ const NavItems = ({ links }: props) => {
 	const pathname = usePathname();
 
 	return (
-		<ul className="myscreen:flex-between hidden myscreen:flex w-full flex-col items-start gap-5 myscreen:flex-row">
-			{links.map((link) => {
+		<ul className="myscreen:flex-between hidden myscreen:flex w-full flex-col items-start gap-5 myscreen:flex-row text-black">
+			{links.map((link, index) => {
 				const isActive = pathname === link.route;
 
 				return (
 					<button
-						key={link.route}
-						className={`${isActive && 'text-primary'} flex-center p-semibold-12 xl:p-bold-16 whitespace-nowrap bg-transparent text-black border-mypurple hover:text-mypurple`}
+						key={index}
+						className={`${isActive && 'text-primary'} flex-center p-semibold-12 xl:p-bold-16 whitespace-nowrap`}
 					>
-						<Link href={link.route}>{link.label}</Link>
+						<Link className='text-black hover:text-mypurple' href={link.route}>{link.label}</Link>
 					</button>
 				);
 			})}

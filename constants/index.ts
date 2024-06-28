@@ -6,38 +6,38 @@ export interface links {
 export const L_headerLinks: links[] = [
   {
     label: "Notre Entreprise",
-    route: "/entreprise",
+    route: "/",
   },
   {
     label: "Notre science",
-    route: "/science",
+    route: "/",
   },
   {
     label: "Votre Santé",
-    route: "/santé",
+    route: "/",
   },
   {
     label: "Partenariat",
-    route: "/partenariat",
+    route: "/",
   },
 ];
 
 export const R_headerLinks: links[] = [
   {
     label: "Média",
-    route: "/media",
+    route: "/",
   },
   {
     label: "Investisseurs",
-    route: "/investisseurs",
+    route: "/",
   },
   {
     label: "Carrières",
-    route: "/carrières",
+    route: "/",
   },
   {
     label: "Partenariat Paris 2024",
-    route: "/partenariat_paris_2024",
+    route: "/",
   },
 ];
 
@@ -54,43 +54,43 @@ export const IconLists = [
 export const footerLinks: links[] = [
   {
     label: "Contact",
-    route: "/Contact",
+    route: "/",
   },
   {
     label: "Mentions légales",
-    route: "/Mentions_légales",
+    route: "/",
   },
   {
     label: "Vie Privée et Données Personnelles",
-    route: "/Vie_Privée_et_Données_Personnelles",
+    route: "/",
   },
   {
     label: "Politique des cookies",
-    route: "/Politique_des_cookies",
+    route: "/",
   },
   {
     label: "Entreprise Today",
-    route: "/Entreprise_Today",
+    route: "/",
   },
   {
     label: "Nos publications",
-    route: "/Nos_publications",
+    route: "/",
   },
   {
     label: "Plan du site",
-    route: "/Plan_du_site",
+    route: "/",
   },
   {
     label: "Annuaire",
-    route: "/Annuaire",
+    route: "/",
   },
   {
     label: "Accessibilité : conformité partielle",
-    route: "/Accessibilité",
+    route: "/",
   },
   {
     label: "Code de Conduite",
-    route: "/Code_de_Conduite",
+    route: "/",
   },
 ];
 

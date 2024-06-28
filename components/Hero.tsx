@@ -31,6 +31,7 @@ const Hero = () => {
 			<Image
 				src='/background.jpeg'
 				alt='hero'
+				priority
 				width={1920}
 				height={1080}
 				className="object-center -translate-y-5 w-full h-[40%] sm:h-auto "
