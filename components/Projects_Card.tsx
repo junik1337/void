@@ -13,7 +13,7 @@ interface Props {
 
 const Projects_Card = ({ title, description, picture, PhotoPosition, id }: Props) => {
 	return (
-		<div className="card lg:card-side bg-base-100 shadow-xl justify-between w-[98%] flex flex-col-reverse lg:flex-row">
+		<div className={`card lg:card-side bg-base-100 shadow-xl justify-between w-[98%] flex ${id !== 2 ? 'flex-col-reverse' : 'flex-col'} lg:flex-row`}>
 			{PhotoPosition === 'left' &&
 				<div className="relative w-full ">
 					<Image
