@@ -8,8 +8,8 @@ const Hero = () => {
 			id='hero'
 			className='w-screen h-[700px] justify-between flex-col lg:flex-row overflow-hidden flex items-center xl:justify-around '
 		>
-			<div className='rounded-lg bg-white top-[30%] lg:top-auto md:left-[10%] absolute z-10 w-[90%] lg:max-w-xl h-[460px] justify-between p-8 gap-4 flex flex-col'>
-				<p className='text-[44px] font-bold tracking-normal leading-loose' style={{ lineHeight: '1.75' }}>
+			<div className='rounded-lg bg-white top-[35%] sm:top-[40%] lg:top-auto md:left-[10%] absolute z-10 w-[90%] sm:max-w-xl h-fit max-h-[500px] justify-between p-8 gap-4 flex flex-col'>
+				<p className='text-[32px] font-bold sm:h2-bold1 tracking-normal leading-loose' style={{ lineHeight: '1.75' }}>
 					Journée des maladies
 					rares 2024 : L'équité en
 					action
@@ -29,7 +29,7 @@ const Hero = () => {
 				alt='hero'
 				width={1920}
 				height={1080}
-				className="object-center -translate-y-5 xl:w-full h-auto w-auto"
+				className="object-center -translate-y-5 w-full h-[40%] sm:h-auto"
 			/>
 		</section>
 	);
