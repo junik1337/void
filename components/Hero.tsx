@@ -6,7 +6,7 @@ const Hero = () => {
 	return (
 		<section
 			id='hero'
-			className='relative w-screen h-[700px] justify-start items-center flex-col lg:flex-row overflow-hidden flex xl:justify-around'
+			className='relative w-screen h-[740px] md:h-[700px] justify-start items-center flex-col lg:flex-row overflow-hidden flex xl:justify-around'
 		>
 			<div
 				className='rounded-lg bg-white bottom-0 lg:bottom-auto xl:-translate-x-96 absolute z-10 w-[90%] sm:max-w-xl h-fit max-h-[500px] justify-between p-8 gap-4 flex flex-col'>
@@ -34,7 +34,7 @@ const Hero = () => {
 				priority
 				width={1920}
 				height={1080}
-				className="object-center -translate-y-5 w-full h-[48%] sm:h-auto "
+				className="object-center -translate-y-5 w-full h-[42%] sm:h-auto "
 			/>
 		</section>
 	);
