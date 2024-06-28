@@ -15,11 +15,11 @@ const Hero = () => {
 					style={{ lineHeight: '1.75' }}
 				>
 					Journée des maladies
-					rares 2024 : L'équité en
+					rares 2024 : L&apos;équité en
 					action
 				</p>
 				<p className='w-[90%] text-sm'>
-					À l'occasion de la Journée des maladies rares, il est plus important que
+					À l&apos;occasion de la Journée des maladies rares, il est plus important que
 					jamais de continuer à rechercher un diagnostic, une innovation, un
 					soutien et un accès équitables pour les personnes atteintes de maladies
 					rares.
