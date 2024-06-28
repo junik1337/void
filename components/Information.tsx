@@ -16,7 +16,7 @@ const Infromation = () => {
 				{CardData4.map((card, index) => (
 					<div key={index} className='px-6 py-8 flex flex-col w-full border-2 gap-4'>
 						<div className='w-full flex justify-between items-center'>
-							<p className='text-sm w-fit'>{card.date}</p>
+							<p className='text-sm font-bold w-fit'>{card.date}</p>
 							<button className='w-[44px] md:flex hidden h-[44px] p-1 rounded-full border border-mypurple items-center justify-center'>
 								<FaDownload className='text-mypurple w-[14px] h-[14px]' />
 							</button>
