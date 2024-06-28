@@ -8,8 +8,12 @@ const Hero = () => {
 			id='hero'
 			className='w-screen h-[700px] justify-between flex-col lg:flex-row overflow-hidden flex items-center xl:justify-around '
 		>
-			<div className='rounded-lg bg-white top-[35%] sm:top-[40%] lg:top-auto md:left-[10%] absolute z-10 w-[90%] sm:max-w-xl h-fit max-h-[500px] justify-between p-8 gap-4 flex flex-col'>
-				<p className='text-[32px] font-bold sm:h2-bold1 tracking-normal leading-loose' style={{ lineHeight: '1.75' }}>
+			<div
+				className='rounded-lg bg-white top-[35%] sm:top-[40%] lg:top-auto md:left-[10%] absolute z-10 w-[90%] sm:max-w-xl h-fit max-h-[500px] justify-between p-8 gap-4 flex flex-col'>
+				<p
+					className='text-[32px] font-bold sm:h2-bold1 tracking-normal leading-loose'
+					style={{ lineHeight: '1.75' }}
+				>
 					Journée des maladies
 					rares 2024 : L'équité en
 					action
