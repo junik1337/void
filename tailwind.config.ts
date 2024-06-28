@@ -40,7 +40,10 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  daisyui: {
+    darkTheme: false,
+  },
+  plugins: [require("tailwindcss-animate"), require("daisyui")],
 } satisfies Config;
 
 export default config;
